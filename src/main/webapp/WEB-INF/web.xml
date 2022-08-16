@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>charity system</display-name>
+  <welcome-file-list>
+    <welcome-file>memberRegistration.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>charitydonate1.jsp</welcome-file>
+    <welcome-file>charitydonate2.jsp</welcome-file>
+    <welcome-file>charitydonate3.jsp</welcome-file>
+    <welcome-file>payment.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>RegisterServlet</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>next_xadmin.register.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>next_xadmin.login.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>CharityServlet</display-name>
+    <servlet-name>CharityServlet</servlet-name>
+    <servlet-class>next_xadmin.selectcharity.charity.CharityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CharityServlet</servlet-name>
+    <url-pattern>/charity</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>reselectproject</display-name>
+    <servlet-name>reselectproject</servlet-name>
+    <servlet-class>next_xadmin.reselectproject.reselectproject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reselectproject</servlet-name>
+    <url-pattern>/reselectproject</url-pattern>
+  </servlet-mapping>
+</web-app>

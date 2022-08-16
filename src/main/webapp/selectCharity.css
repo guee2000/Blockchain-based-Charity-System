@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+	height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  
+}
+.container{
+  height:600px;
+  display: inline-flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  position: fixed;
+  top: 150; 
+  right: 0;
+  border: 3px solid black;
+  
+}
+.container::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.container .left{
+ transform:translate(-50%,30%);
+ float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.container .middle{
+ transform:translate(-20%,30%);
+ float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+.container .right{
+ transform:translate(20%,30%);
+ float: left;
+	width: 33.33%;
+	padding: 1px;
+}
+.container .userid{
+	font-size: 25px;
+    font-weight: 500;
+    position: relative;
+  	right: -450px;
+  	top: 50px;
+}
+
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+
+  content: "";
+  position: relative;
+  right: 0;
+  bottom: 1;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+select{
+	  height: 45px;
+	  width: 100%;
+	  outline: none;
+	  font-size: 16px;
+	  border-radius: 5px;
+	  padding-left: 15px;
+	  border: 1px solid #ccc;
+	  border-bottom-width: 2px;
+	  transition: all 0.3s ease;
+	
+}
+
+ 
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+
+  
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+
+
+.navbar 
+{
+  width: 100%;
+  background-color: #85CF49;
+  overflow: auto;
+}
+
+
+.navbar a 
+{
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.navbar a:hover 
+{
+  background-color: #D0FDC0;
+  text-decoration: none;
+  color: black;
+}
+ 
+
+
+
+}
