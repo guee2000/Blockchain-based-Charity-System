@@ -1,5 +1,5 @@
 # Blockchain-based-Charity-System
-This is a web-application charity system which has combined with blockchain technology that will perform hash values to every transaction. Within the blockchain technology, every transcation record will has 'previous hash value' and 'current hash value'. So, the hash value will be regenerated and cause the following existing block's hash value to be unmatched when someone is trying to altered the transaction record.
+This is a web-application charity system which has combined with blockchain technology that will perform hash values to every transaction. Within the blockchain technology, every transcation record will has 'previous hash value' and 'current hash value'. So, the hash value will be regenerated and cause the following existing block's hash value to be unmatched when someone is trying to altered the transaction record. Moreover, the charity system will protect the user information by hashing and keeping them into the database.
 
 ## Installation Steps:
 1. Go to 'Eclipse' official website to download Eclipse IDE.
